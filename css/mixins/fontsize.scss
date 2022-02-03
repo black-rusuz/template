@@ -1,0 +1,13 @@
+// Миксин с адаптивным шрифтом
+// Подключаются @include resp-font(24, 48), где 24 - любое мин значение, 48 - любое макс значение
+@mixin resp-font($mobileSize, $pcSize) {
+  $max-width: 1280;
+
+  $addPcSize: $pcSize - $mobileSize;
+  $addMobileSize: $addPcSize * 1.7;
+
+  font-size: calc(#{$mobileSize + px} + #{$addPcSize} * (100vw / #{$max-width}));
+  @media (max-width: $tablet) {
+    font-size: calc(#{$mobileSize + px} + #{$addMobileSize} * ((100vw - 320px) / #{$max-width}));
+  }
+}

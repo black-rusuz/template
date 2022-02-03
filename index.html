@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Constant -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <meta charset="UTF-8">
+    <meta name="robots" content="all"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+    <!-- TODO: Change for SEO -->
+    <title>Title</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="canonical" href="https://Canonical.URL">
+    <meta name="description" content="Description"/>
+    <meta name="keywords" content="keyword keyword keyword keyword keyword keyword"/>
+
+    <!-- TODO: Change for OpenGraph -->
+    <meta property="og:url" content="Canonical.URL">
+    <meta property="og:title" content="Title"/>
+    <meta property="og:description" content="Description"/>
+    <meta property="og:image" content="img/Image"/>
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="container">
+        <div class="header__row">
+
+            <div class="header__logo">
+                <a class="header__img" href="#">
+                    <img src="img/logo.webp" alt=""/>
+                </a>
+            </div>
+
+            <div class="header__burger">
+                <span></span>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__link">
+                        <a href="#anchor1">Button 1</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#anchor2">Button 2</a>
+                    </li>
+                    <li class="header__link">
+                        <a href="#anchor3">Button 3</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__action">
+                <button class="header__btn order">Action</button>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<main class="main">
+    <div class="container">
+        <div>
+            SimpleLightbox
+            https://simplelightbox.com/
+
+            Swiper
+            http://swiperjs.com/
+        </div>
+
+        <div>
+            <button class="order">Заказать</button>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus asperiores at atque autem eos, ex
+            fugiat incidunt minima perferendis tempore vitae? Alias dolorem earum eos et inventore itaque iusto.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aperiam dolor dolorem ducimus est in
+            laudantium magni natus neque, odio odit possimus quaerat quas quo quos sequi ut.</p>
+    </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal">
+    <div class="modal__window">
+        <h2 class="modal__title">Form title</h2>
+        <span class="modal__description">Form description</span>
+        <form class="modal__form" method="post" action="php/send.php">
+            <label for="name" style="display: none;">Имя</label>
+            <input name="name" id="name" type="text" placeholder="fake" style="display: none;">
+            <label for="buyer">Имя</label>
+            <input name="buyer" id="buyer" type="text" placeholder="Иван Иванов" required>
+            <label for="tel">Телефон</label>
+            <input name="tel" id="tel" type="tel" placeholder="+7 (999) 123-45-67" required>
+            <input class="button" type="submit" value="Отправить">
+        </form>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/modal.js"></script>
+
+</body>
+</html>

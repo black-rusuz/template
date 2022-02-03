@@ -1,0 +1,67 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0 0 0 / 60%);
+  font-family: "Roboto", sans-serif;
+
+  &.active {
+    display: flex;
+  }
+
+  .modal__window {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 50%;
+    min-width: 310px;
+    max-width: 450px;
+    padding: 50px;
+    background: #fff;
+
+    .modal__title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #424242;
+      text-align: center;
+    }
+
+    .modal__description {
+      text-align: center;
+      font-weight: 300;
+      font-size: 16px;
+    }
+
+    .modal__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      input {
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 16px;
+        width: 100%;
+        padding: 10px 15px;
+      }
+
+      input[type=submit] {
+        text-decoration: none;
+        font-weight: 700;
+        background: $accent;
+        color: #fff;
+        text-align: center;
+        transition: all .6s ease 0s;
+      }
+    }
+  }
+}
