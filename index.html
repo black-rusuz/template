@@ -64,17 +64,14 @@
 
 <!-- CONTENT -->
 <main class="main">
-    <div class="container">
-        <div>
-            SimpleLightbox
-            https://simplelightbox.com/
-
-            Swiper
-            http://swiperjs.com/
-        </div>
-
-        <div>
-            <button class="order">Заказать</button>
+    <div class="components">
+        <div class="container">
+            <h2 class="components__title">Nice JS Libs:</h2>
+            <ul class="components__list">
+                <li><a target="_blank" href="https://swiperjs.com/">Swiper</a></li>
+                <li><a target="_blank" href="https://simplelightbox.com/">SimpleLightbox</a></li>
+            </ul>
+            <button class="components__btn order">Заказать</button>
         </div>
     </div>
 </main>
@@ -82,22 +79,20 @@
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
-        <h2>Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus asperiores at atque autem eos, ex
-            fugiat incidunt minima perferendis tempore vitae? Alias dolorem earum eos et inventore itaque iusto.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aperiam dolor dolorem ducimus est in
-            laudantium magni natus neque, odio odit possimus quaerat quas quo quos sequi ut.</p>
+        <h2 class="footer__title">Title</h2>
+        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus asperiores at atque autem eos, ex fugiat incidunt minima perferendis tempore vitae? Alias dolorem earum eos et inventore itaque iusto.</p>
+        <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aperiam dolor dolorem ducimus est in laudantium magni natus neque, odio odit possimus quaerat quas quo quos sequi ut.</p>
     </div>
 </footer>
 
 <!-- MODAL -->
 <div class="modal">
     <div class="modal__window">
+        <button class="modal__close">&times;</button>
         <h2 class="modal__title">Form title</h2>
         <span class="modal__description">Form description</span>
         <form class="modal__form" method="post" action="php/send.php">
-            <label for="name" style="display: none;">Имя</label>
-            <input name="name" id="name" type="text" placeholder="fake" style="display: none;">
+            <input name="name" id="name" type="hidden" placeholder="fake">
             <label for="buyer">Имя</label>
             <input name="buyer" id="buyer" type="text" placeholder="Иван Иванов" required>
             <label for="tel">Телефон</label>
@@ -111,6 +106,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/burger.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/inputMask.js"></script>
 
 </body>
 </html>

@@ -44,7 +44,5 @@ Project template for single page websites with HTML, SASS and JS (with jQuery).
 
 ## TODO's
 
-- Make x-button for closing form
-- Check and debug send.php
 - Make better content example (with lots of useful JS libraries)
 - Make React starter-kit in new branch

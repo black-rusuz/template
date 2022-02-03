@@ -18,6 +18,7 @@
   }
 
   .modal__window {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -26,6 +27,15 @@
     max-width: 450px;
     padding: 50px;
     background: #fff;
+
+    .modal__close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: transparent;
+      font-size: 36px;
+      margin: 10px 20px;
+    }
 
     .modal__title {
       font-size: 32px;

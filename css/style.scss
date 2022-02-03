@@ -2,6 +2,7 @@
 @import "resources/nullstyle";
 @import "resources/breakpoints";
 @import "resources/colors";
+@import "resources/dimens";
 @import "resources/fonts";
 
 body {
@@ -20,3 +21,40 @@ body {
 }
 
 // TODO: Write your style here
+.main {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+.components {
+  padding: 50px 0;
+  line-height: 2;
+
+  .components__title {
+    font-size: $header1;
+    font-weight: 500;
+  }
+
+  .components__list {
+
+    li {
+      font-size: $paragraph;
+      list-style: disc;
+    }
+  }
+
+  .components__btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: $paragraph;
+    font-weight: 400;
+    color: #fff;
+    background: $accent;
+    transition: all .3s ease;
+
+    &:hover {
+      background: $accentHover;
+    }
+  }
+}

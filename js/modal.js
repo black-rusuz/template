@@ -1,9 +1,14 @@
 $(document).ready(function () {
-  // TODO: Чё по закрытию формы?
-  $('.order').click(function () {
-    openModal()
+  $('.order, .modal__close').click(function () {
+    openModal();
   });
 })
+
+window.onclick = function (event) {
+  if (event.target === $('.modal')[0]) {
+    openModal();
+  }
+}
 
 function openModal() {
   $('.modal').toggleClass('active');

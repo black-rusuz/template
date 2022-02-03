@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,10 +41,11 @@
         .header__link {
           a {
             color: #fff;
+            font-size: $paragraph;
             font-weight: 400;
 
             &:hover {
-              color: $accentHover;
+              color: $accent;
             }
           }
         }
@@ -55,14 +56,13 @@
       z-index: 3;
 
       .header__btn {
-        display: inline-block;
         padding: 10px 20px;
+        border-radius: 10px;
         color: #fff;
         background: $accent;
+        font-size: $paragraph;
+        font-weight: 400;
         transition: all .3s ease;
-        text-decoration: none;
-        font-weight: 900;
-        letter-spacing: 0.07em;
 
         &:hover {
           background: $accentHover;
@@ -152,7 +152,7 @@
           flex-direction: column;
           align-items: center;
           gap: 24px;
-          font-size: 24px;
+          font-size: $header2;
 
           .header__link {
             color: #fff;
@@ -162,7 +162,7 @@
       }
 
       .header__action {
-          display: none;
+        display: none;
       }
     }
   }

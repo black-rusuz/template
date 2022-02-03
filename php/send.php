@@ -28,7 +28,7 @@
 	$mail->Subject = "";                                        // Заголовок письма
 	$mail->Body = "<h3>Имя: $buyer <br>Телефон: $tel</h3>";     // Текст письма
 
-	if(isset($fake) && !empty($fake)) {
+	if(isset($fake) && empty($fake)) {
 		if ($mail->send()) {
 		    // TODO: Сделать страницу успешной отправки
 			echo "Заявка отправлена!";

@@ -1,8 +1,17 @@
 .footer {
+  padding: 50px 0;
+  font-size: $paragraph;
+  line-height: 2;
   color: #fff;
   background: #000;
 
-  position: absolute;
-  bottom: 10px;
-  z-index: -1;
+  .footer__title {
+    font-size: $header2;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .footer__text {
+    margin-bottom: 10px;
+  }
 }

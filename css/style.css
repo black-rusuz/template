@@ -27,7 +27,6 @@ html, body {
   width: 100%;
   font-size: 16px;
   font-size: 100%;
-  line-height: 1;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -75,7 +74,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -111,6 +110,7 @@ body .header .header__row .header__menu .header__list {
 }
 body .header .header__row .header__menu .header__list .header__link a {
   color: #fff;
+  font-size: 18px;
   font-weight: 400;
 }
 body .header .header__row .header__menu .header__list .header__link a:hover {
@@ -120,17 +120,16 @@ body .header .header__row .header__action {
   z-index: 3;
 }
 body .header .header__row .header__action .header__btn {
-  display: inline-block;
   padding: 10px 20px;
+  border-radius: 10px;
   color: #fff;
   background: #c4398d;
+  font-size: 18px;
+  font-weight: 400;
   transition: all 0.3s ease;
-  text-decoration: none;
-  font-weight: 900;
-  letter-spacing: 0.07em;
 }
 body .header .header__row .header__action .header__btn:hover {
-  background: #c4398d;
+  background: #6a1f4d;
 }
 @media (max-width: 767px) {
   body .header .header__row {
@@ -229,6 +228,7 @@ body .modal.active {
   display: flex;
 }
 body .modal .modal__window {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -237,6 +237,14 @@ body .modal .modal__window {
   max-width: 450px;
   padding: 50px;
   background: #fff;
+}
+body .modal .modal__window .modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  font-size: 36px;
+  margin: 10px 20px;
 }
 body .modal .modal__window .modal__title {
   font-size: 32px;
@@ -271,16 +279,55 @@ body .modal .modal__window .modal__form input[type=submit] {
   transition: all 0.6s ease 0s;
 }
 body .footer {
+  padding: 50px 0;
+  font-size: 18px;
+  line-height: 2;
   color: #fff;
   background: #000;
-  position: absolute;
-  bottom: 10px;
-  z-index: -1;
+}
+body .footer .footer__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+body .footer .footer__text {
+  margin-bottom: 10px;
 }
 body .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.main {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
+.components {
+  padding: 50px 0;
+  line-height: 2;
+}
+.components .components__title {
+  font-size: 36px;
+  font-weight: 500;
+}
+.components .components__list li {
+  font-size: 18px;
+  list-style: disc;
+}
+.components .components__btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background: #c4398d;
+  transition: all 0.3s ease;
+}
+.components .components__btn:hover {
+  background: #6a1f4d;
 }
 
 /*# sourceMappingURL=style.css.map */
